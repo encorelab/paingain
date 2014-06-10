@@ -29,6 +29,9 @@ gem 'spring',        group: :development
 # Adding Devise for user accounts and authentication
 gem 'devise'
 
+# Bootstrap 3
+gem 'bootstrap3-rails', '~> 3.1.1'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
