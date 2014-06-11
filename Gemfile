@@ -33,6 +33,9 @@ gem 'bootstrap3-rails', '~> 3.1.1'
 # Haml 4.0.5
 gem 'haml', '~> 4.0.5'
 
+# html2haml gem
+gem 'html2haml'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
