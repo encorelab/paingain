@@ -3,6 +3,8 @@
     .page-header
       %h2 Sign up
     = simple_form_for resource, as: resource_name, url: registration_path(resource_name), class: 'form-horizontal' do |f|
+      = f.input :first_name, hint: "Enter your first name"
+      = f.input :last_name, hint: "Enter your last name"
       = f.input :email, hint: 'Enter email address'
       = f.input :password, hint: 'Enter password'
       = f.input :password_confirmation, hint: 'Re-enter your password'
