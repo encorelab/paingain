@@ -1,8 +1,12 @@
-%h2 Sign in
-= simple_form_for resource, as: resource_name, url: session_path(resource_name), class: 'form-horizontal' do |f|
-  = f.input :email, hint: 'Enter email address'
-  = f.input :password, hint: 'Enter password'
-  - if devise_mapping.rememberable?
-    = f.input :remember_me, as: :boolean
-  = f.button :submit, 'Sign Up', class: 'btn btn-primary'
-= render "devise/shared/links"
+.row
+  .col-md-6
+    .page-header
+      %h2 Sign in
+    = simple_form_for resource, as: resource_name, url: session_path(resource_name), class: 'form-horizontal' do |f|
+      = f.input :email, hint: 'Enter email address'
+      = f.input :password, hint: 'Enter password'
+      - if devise_mapping.rememberable?
+        / = f.input :remember_me, as: :boolean
+      = f.button :submit, 'Sign-in', class: 'btn btn-primary'
+      = render "devise/shared/links"
+

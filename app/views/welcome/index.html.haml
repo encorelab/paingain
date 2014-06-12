@@ -1,21 +1,19 @@
 .jumbotron
-  .container
-    %h1 Paediatric Pain Toolkit
-    %p This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.
+  %h1 Paediatric Pain Toolkit
+  %p This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.
 .row
   .col-md-4
     %h2 Plan
     %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
     - if user_signed_in?
       %p
-        = link_to 'Plan', comfy_cms_render_page_path('section-1'), class: "btn btn-primary"
-        / %a.btn.btn-primary{:href => "#", :role => "button"} Start Planning
+        = link_to 'Plan', comfy_cms_render_page_path('plan'), class: "btn btn-primary"
   .col-md-4
     %h2 Change
     %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
     - if user_signed_in?
       %p
-        = link_to 'Change', comfy_cms_render_page_path('section-2'), class: "btn btn-primary"
+        = link_to 'Change', comfy_cms_render_page_path('change'), class: "btn btn-primary"
   .col-md-4
     %h2 Audit Tool
     %p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.

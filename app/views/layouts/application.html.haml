@@ -13,14 +13,12 @@
             %span.sr-only Toggle navigation
             %span.icon-bar
             %span.icon-bar
-          %a.navbar-brand{:href => "#"} Paediatric Pain Toolkit
+          = link_to 'Paediatric Pain Toolkit', root_url, class: 'navbar-brand'
         .navbar-collapse.collapse
           %form.navbar-form.navbar-right{:role => "form"}
-            = render 'layouts/user_header'
+            = render 'layouts/shared/user_header'
         / /.navbar-collapse
-    .notice= notice
-    .alert= alert
-    .container
+    .container.theme-showcase
       = yield
     %footer
       %hr/
