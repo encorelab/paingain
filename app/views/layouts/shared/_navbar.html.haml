@@ -1,0 +1,11 @@
+.navbar.navbar-inverse.navbar-fixed-top{:role => "navigation"}
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+      = link_to 'Paediatric Pain Toolkit', root_url, class: 'navbar-brand'
+    .navbar-collapse.collapse
+      %form.navbar-form.navbar-right{:role => "form"}
+        = render 'layouts/shared/user_header'

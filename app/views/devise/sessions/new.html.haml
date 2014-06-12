@@ -7,6 +7,7 @@
       = f.input :password, hint: 'Enter password'
       - if devise_mapping.rememberable?
         / = f.input :remember_me, as: :boolean
-      = f.button :submit, 'Sign-in', class: 'btn btn-primary'
-      = render "devise/shared/links"
+      = f.button :submit, 'Login', class: 'btn btn-success'
+      .pull-right
+        = render "devise/shared/links"
 
