@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
+  root 'welcome#index'
+
   comfy_route :cms_admin, :path => '/admin'
 
   # Make sure this routeset is defined last
   comfy_route :cms, :path => '/', :sitemap => false
 
   devise_for :users
-  
-  root 'welcome#index'
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
