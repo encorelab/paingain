@@ -3,8 +3,8 @@
     .page-header
       %h2 Sign in
     = simple_form_for resource, as: resource_name, url: session_path(resource_name), class: 'form-horizontal' do |f|
-      = f.input :login, hint: 'Login with groupname', placeholder: 'groupname here'
-      = f.input :password, hint: 'Enter password'
+      = f.input :login, hint: 'Login with groupname or email address', placeholder: 'Groupname or Email Address'
+      = f.input :password, hint: 'Enter password', placeholder: 'Password goes here'
       - if devise_mapping.rememberable?
         / = f.input :remember_me, as: :boolean
       = f.button :submit, 'Login', class: 'btn btn-success'
