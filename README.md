@@ -1,6 +1,6 @@
 ```
 
-$$$$$$$\   $$$$$$\  $$$$$$\ $$\   $$\        $$$$$$\   $$$$$$\  $$$$$$\ $$\   $$\ 
+$$$$$$$\   $$$$$$\  $$$$$$\ $$\   $$\        $$$$$$\   $$$$$$\  $$$$$$\ $$\   $$\
 $$  __$$\ $$  __$$\ \_$$  _|$$$\  $$ |      $$  __$$\ $$  __$$\ \_$$  _|$$$\  $$ |
 $$ |  $$ |$$ /  $$ |  $$ |  $$$$\ $$ |      $$ /  \__|$$ /  $$ |  $$ |  $$$$\ $$ |
 $$$$$$$  |$$$$$$$$ |  $$ |  $$ $$\$$ |      $$ |$$$$\ $$$$$$$$ |  $$ |  $$ $$\$$ |
@@ -9,8 +9,8 @@ $$ |      $$ |  $$ |  $$ |  $$ |\$$$ |      $$ |  $$ |$$ |  $$ |  $$ |  $$ |\$$$
 $$ |      $$ |  $$ |$$$$$$\ $$ | \$$ |      \$$$$$$  |$$ |  $$ |$$$$$$\ $$ | \$$ |
 \__|      \__|  \__|\______|\__|  \__|       \______/ \__|  \__|\______|\__|  \__|
 
-```                                                                             
-                                                                                 
+```
+
 # the Stack
 
 * Rails 4
@@ -20,9 +20,11 @@ $$ |      $$ |  $$ |$$$$$$\ $$ | \$$ |      \$$$$$$  |$$ |  $$ |$$$$$$\ $$ | \$$
 
 # Setup
 
-* required Postgres App to be installed
+* requires Postgres App to be installed
 * `git clone git@github.com:switchflip/paingain.git`
 * `cd paingain`
 * `bundle install`
 * `bundle exec rake db:create`
 * `bundle exec rake db:migrate`
+* login in comfortable mexican sofa admin at `localhost://3000/admin`
+* Create a new site entitled `paingain`
