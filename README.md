@@ -25,8 +25,7 @@ $$ |      $$ |  $$ |$$$$$$\ $$ | \$$ |      \$$$$$$  |$$ |  $$ |$$$$$$\ $$ | \$$
 * `cd paingain`
 * `bundle install`
 *  Create `config/database.yml`
-* `bundle exec rake db:create`
-* `bundle exec rake db:migrate`
+* `bundle exec rake db:create db:migrate db:seed`
 * login in comfortable mexican sofa admin at `localhost://3000/admin`
 * Create a new site entitled `PainGain`, with the identifier as `paingain`.
 * Upon navigating to Pages you should see the site tree.
