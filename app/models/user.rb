@@ -1,6 +1,10 @@
 class User < ActiveRecord::Base
+  ROLES = ['admin', 'user'].freeze
+
   belongs_to :group
   validates_presence_of :group
+  validates :role, presence: true, inclusion: {in: ROLES}
+
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable

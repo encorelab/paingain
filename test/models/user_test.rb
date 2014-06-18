@@ -18,7 +18,7 @@ class UserTest < ActiveSupport::TestCase
     assert user.errors.messages[:email].present?
     assert user.errors.messages[:password].present?
     assert user.errors.messages[:group].present?
-    assert_equal 3, user.errors.messages.length
+    assert_equal 4, user.errors.messages.length
   end
 
   def test_auth_conditions
