@@ -8,20 +8,16 @@ class UserTest < ActiveSupport::TestCase
     end
   end
 
-  def test_unqiue_group_name
+  def test_group
     user = users(:default)
-    assert user.group_name.present?
-    group_name = user.group_name
-    new_user = User.create(email: 'group@test.com', group_name: group_name)
-    assert !new_user.valid?
-    assert new_user.errors.messages[:group_name].present?
+    assert user.group.present?
   end
 
   def test_validations
     user = User.create
     assert user.errors.messages[:email].present?
     assert user.errors.messages[:password].present?
-    assert user.errors.messages[:group_name].present?
+    assert user.errors.messages[:group].present?
     assert_equal 3, user.errors.messages.length
   end
 
