@@ -24,8 +24,10 @@ $$ |      $$ |  $$ |$$$$$$\ $$ | \$$ |      \$$$$$$  |$$ |  $$ |$$$$$$\ $$ | \$$
 * `git clone git@github.com:switchflip/paingain.git`
 * `cd paingain`
 * `bundle install`
+*  Create `config/database.yml`
 * `bundle exec rake db:create`
 * `bundle exec rake db:migrate`
 * login in comfortable mexican sofa admin at `localhost://3000/admin`
 * Create a new site entitled `PainGain`, with the identifier as `paingain`.
 * Upon navigating to Pages you should see the site tree.
+
