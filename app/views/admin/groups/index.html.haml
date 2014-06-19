@@ -1,1 +1,29 @@
-%h2 Groups
+%h2 Manage Groups
+.row
+  .col-md-12
+    = link_to 'Create Group', new_admin_group_path, class: 'btn btn-success'
+
+%hr/
+
+.row
+  .col-md-12
+    %table.table.table-hover
+      %tbody
+        %tr
+          %th Name
+          %th Location
+          %th Unit
+          %th Edit
+          %th Delete
+        - @groups.each do |group|
+          %tr
+            %td
+              = group.name
+            %td
+              = group.location
+            %td
+              = group.unit
+            %td
+              = link_to "Edit", edit_admin_group_path(:id), class: "btn btn-warning"
+            %td
+              = link_to "Delete", admin_group_path(:id), method: :delete, class: "btn btn-danger", confirm: "Are you sure? There is no undoing this."

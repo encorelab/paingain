@@ -1,0 +1,32 @@
+%h2 Manage Users
+.row
+  .col-md-12
+    = link_to 'Create User', new_admin_user_path, class: 'btn btn-success'
+
+%hr/
+
+.row
+  .col-md-12
+    %table.table.table-hover
+      %tbody
+        %tr
+          %th Role
+          %th Email
+          %th First Name
+          %th Last Name
+          %th Edit
+          %th Delete
+        - @users.each do |user|
+          %tr
+            %td
+              = user.role
+            %td
+              = user.email
+            %td
+              = user.first_name
+            %td
+              = user.last_name
+            %td
+              = link_to "Edit", edit_admin_user_path(:id), class: "btn btn-warning"
+            %td
+              = link_to "Delete", admin_user_path(:id), method: :delete, class: "btn btn-danger", confirm: "Are you sure? There is no undoing this."
