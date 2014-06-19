@@ -1,1 +1,13 @@
-
+.row
+	.col-md-6
+		.page-header
+		/ 	%h2 Manage User
+		/ = simple_form_for @user, class: 'form-horizontal' do |f|
+		/ 	= f.input :group_id
+		/ 	= f.input :email
+		/ 	= f.input :first_name
+		/ 	= f.input :last_name
+		/ 	= f.input :password
+		/ 	= f.input :group_name
+		/ 	= f.input :role
+		/ 	= f.button :submit, 'Submit', class: 'btn btn-success'

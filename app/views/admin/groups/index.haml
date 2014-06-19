@@ -13,6 +13,7 @@
           %th Name
           %th Location
           %th Unit
+          %th Show
           %th Edit
           %th Delete
         - @groups.each do |group|
@@ -24,6 +25,8 @@
             %td
               = group.unit
             %td
-              = link_to "Edit", edit_admin_group_path(:id), class: "btn btn-warning"
+              = link_to 'Show', admin_group_path(group), class: 'btn btn-success'
             %td
-              = link_to "Delete", admin_group_path(:id), method: :delete, class: "btn btn-danger", confirm: "Are you sure? There is no undoing this."
+              = link_to "Edit", edit_admin_group_path(group), class: "btn btn-warning"
+            %td
+              = link_to "Delete", admin_group_path(group), method: :delete, class: "btn btn-danger", confirm: "Are you sure?"
