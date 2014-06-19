@@ -1,6 +1,23 @@
 %h2
-	First name:
-	= @user.first_name
-	Last name:
-	= @user.last_name
-	
+	= @user.email
+
+%table.table.table-condensed
+	%thead
+		%tr
+			%th email
+			%th first name
+			%th last name
+			%th group id
+			%th role
+	%tbody
+		%tr
+			%td
+				= @user.email
+			%td
+				= @user.first_name
+			%td
+				= @user.last_name
+			%td
+				= @user.group_id
+			%td
+				= @user.role
