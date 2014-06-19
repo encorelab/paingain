@@ -1,6 +1,36 @@
 %h2
 	= @group.name
-%p
-	= @group.unit
-%p
-	= @group.location
+	Group Summary
+
+.col-md-12
+	%table.table.table-condensed
+		%thead
+			%tr
+				%th name
+				%th location
+				%th unit
+		%tbody
+			%tr
+				%td
+					= @group.name
+				%td
+					= @group.location
+				%td
+					= @group.unit
+
+%h4
+	Group Members
+
+.col-md-6
+	%table.table.table-hover
+		%thead
+			%tr
+				%th First Name
+				%th Last Name
+		%tbody
+			%tr
+				- @group.users.each do |user|
+					%td
+						=user.first_name
+					%td
+						=user.last_name
