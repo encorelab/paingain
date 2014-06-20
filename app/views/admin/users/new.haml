@@ -1,3 +1,3 @@
 %h2 Create User
-= comfy_form_for @user, :url => {:action => :new_admin_user_path} do |form|
-	= render form
+= comfy_form_for @user, :as => :user, :url => {:action => :create} do |form|
+  = render form

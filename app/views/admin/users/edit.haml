@@ -1,4 +1,3 @@
-%h2 
-	= @user.email
-= comfy_form_for @user, :as => :user, :url => {:action => :edit} do |form|
-	= render form
+%h2 Create User
+= comfy_form_for @user, :as => :user, :url => {:action => :update} do |form|
+  = render form

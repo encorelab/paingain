@@ -1,16 +1,19 @@
-%h2
-	= @group.name
-	Group Summary
+.page-header
+	%h2
+		= @group.name
 
 .col-md-12
-	%table.table.table-condensed
+	%table.table.table-hover
 		%thead
 			%tr
-				%th name
-				%th location
-				%th unit
+				%th ID
+				%th Name
+				%th Location
+				%th Unit
 		%tbody
 			%tr
+				%td
+					= @group.id
 				%td
 					= @group.name
 				%td
@@ -18,19 +21,25 @@
 				%td
 					= @group.unit
 
-%h4
+%h2
 	Group Members
 
-.col-md-6
+.col-md-12
 	%table.table.table-hover
 		%thead
 			%tr
+				%th Email
 				%th First Name
 				%th Last Name
+				%th Role
 		%tbody
 			%tr
 				- @group.users.each do |user|
 					%td
+						=user.email
+					%td
 						=user.first_name
 					%td
 						=user.last_name
+					%td
+						=user.role

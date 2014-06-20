@@ -1,8 +1,5 @@
-.row
-	.col-md-6
-		.page-header
-		/ = simple_form_for @group, class: 'form-horizontal' do |f|
-		/ 	= f.input :name
-		/ 	= f.input :location
-		/ 	= f.input :unit
-		/ 	= f.button :submit, 'Submit', class: 'btn btn-success'
+= form.text_field :name
+= form.text_field :location
+= form.text_field :unit
+= form.form_group :class => 'form-actions' do
+  = form.primary @group.new_record?? 'Submit' : 'Update'
