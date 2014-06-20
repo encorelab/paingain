@@ -8,3 +8,4 @@
 
 = form.form_group :class => 'form-actions' do
   = form.primary @user.new_record?? 'Submit' : 'Update'
+  = link_to 'Back', admin_users_path, class: "btn btn-danger pull-right"

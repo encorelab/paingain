@@ -1,13 +1,11 @@
-.row
-  .col-md-12
-    %h2 Manage Groups
-    = link_to 'Create Group', new_admin_group_path, class: 'btn btn-success'
-
-%hr/
+.page-header
+  %h2 Manage Groups
+  = link_to 'Create a New Group', new_admin_group_path, class: 'btn btn-success'
 
 .row
   .col-md-12
     %table.table.table-hover
+      %h3 Groups
       %tbody
         %tr
           %th ID

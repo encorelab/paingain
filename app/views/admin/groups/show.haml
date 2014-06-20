@@ -1,9 +1,11 @@
 .page-header
 	%h2
 		= @group.name
+	%p= "This is a summary of #{@group.name.pluralize} information, including group information and the memebers of this group."
 
 .col-md-12
 	%table.table.table-hover
+		%h3 Group Information
 		%thead
 			%tr
 				%th ID
@@ -21,13 +23,12 @@
 				%td
 					= @group.unit
 
-%h2
-	Group Members
-
 .col-md-12
 	%table.table.table-hover
+		%h3 Group Members
 		%thead
 			%tr
+				%th ID
 				%th Email
 				%th First Name
 				%th Last Name
@@ -35,11 +36,16 @@
 		%tbody
 			%tr
 				- @group.users.each do |user|
-					%td
-						=user.email
-					%td
-						=user.first_name
-					%td
-						=user.last_name
-					%td
-						=user.role
+					%tr
+						%td
+							=user.id
+						%td
+							=user.email
+						%td
+							=user.first_name
+						%td
+							=user.last_name
+						%td
+							=user.role
+
+= link_to 'Back', admin_groups_path, class: "btn btn-success pull-left"

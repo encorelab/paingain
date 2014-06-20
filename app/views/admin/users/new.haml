@@ -1,3 +1,4 @@
-%h2 Create User
+.page-header
+	%h2 Create User
 = comfy_form_for @user, :as => :user, :url => {:action => :create} do |form|
-  = render form
+	= render form

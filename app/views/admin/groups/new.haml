@@ -1,3 +1,4 @@
-%h2 Create Group
+.page-header
+	%h2 Create Group
 = comfy_form_for @group, :as => :group, :url => {:action => :create} do |form|
-  = render form
+	= render form

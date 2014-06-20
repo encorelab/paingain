@@ -2,4 +2,5 @@
 = form.text_field :location
 = form.text_field :unit
 = form.form_group :class => 'form-actions' do
-  = form.primary @group.new_record?? 'Submit' : 'Update'
+	= form.primary @group.new_record?? 'Submit' : 'Update'
+	= link_to 'Back', admin_groups_path, class: "btn btn-danger pull-right"

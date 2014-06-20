@@ -1,13 +1,11 @@
-.row
-  .col-md-12
-    %h2 Manage Users
-    = link_to 'Create User', new_admin_user_path, class: 'btn btn-success'
-
-%hr/
+.page-header
+  %h2 Manage Users
+  = link_to 'Create User', new_admin_user_path, class: 'btn btn-success'
 
 .row
   .col-md-12
     %table.table.table-hover
+      %h3 Users
       %tbody
         %tr
           %th Role
