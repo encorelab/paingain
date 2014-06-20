@@ -1,8 +1,10 @@
 = form.text_field :email
 = form.text_field :first_name
 = form.text_field :last_name
-= form.text_field :group_id
-= form.text_field :role
+= form.password_field :password
+= form.password_field :password_confirmation
+= form.select :group_id, options_from_collection_for_select(Group.all, :id, :name)
+= form.select :role, User::ROLES
 
 = form.form_group :class => 'form-actions' do
   = form.primary @user.new_record?? 'Submit' : 'Update'

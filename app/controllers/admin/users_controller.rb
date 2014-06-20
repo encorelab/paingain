@@ -22,7 +22,7 @@ class Admin::UsersController < Comfy::Admin::Cms::BaseController
   def create
     @user.save!
     flash[:success] = 'User created'
-    redirect_to :action => :edit, :id => @user
+    redirect_to :action => :index
   rescue ActiveRecord::RecordInvalid
     flash.now[:error] = 'Failed to create User'
     render :action => :new
