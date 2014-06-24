@@ -23,9 +23,7 @@ class UserTest < ActiveSupport::TestCase
 
   def test_auth_conditions
     user = users(:default)
-    group_conditions = {login: user.group_name}
     email_conditions = {login: user.email}
-    assert_equal user.id, User.find_first_by_auth_conditions(group_conditions).id
     assert_equal user.id, User.find_first_by_auth_conditions(email_conditions).id
     assert_nil User.find_first_by_auth_conditions(login: 'broken')
   end

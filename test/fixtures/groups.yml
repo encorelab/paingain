@@ -2,3 +2,8 @@ default:
   name: default
   location: default
   unit: default
+
+admin:
+  name: admin
+  location: admin
+  unit: admin
