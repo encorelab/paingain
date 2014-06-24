@@ -3,7 +3,6 @@ class Admin::GroupsController < Comfy::Admin::Cms::BaseController
   before_action :load_group,   :only => [:show, :edit, :update, :destroy]
 
   def index
-    # You probably want some kind of pagination and filtering here eventually
     @groups = Group.all
   end
 
@@ -22,7 +21,7 @@ class Admin::GroupsController < Comfy::Admin::Cms::BaseController
   def create
     @group.save!
     flash[:success] = 'Group created'
-    redirect_to :action => :edit, :id => @group
+    redirect_to :action => :index
   rescue ActiveRecord::RecordInvalid
     flash.now[:error] = 'Failed to create Group'
     render :action => :new
@@ -31,7 +30,7 @@ class Admin::GroupsController < Comfy::Admin::Cms::BaseController
   def update
     @group.update_attributes!(group_params)
     flash[:success] = 'Group updated'
-    redirect_to :action => :edit, :id => @group
+    redirect_to :action => :show, :id => @group
   rescue ActiveRecord::RecordInvalid
     flash.now[:error] = 'Failed to update Group'
     render :action => :edit

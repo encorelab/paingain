@@ -1,7 +1,5 @@
 require 'test_helper'
-
 class Admin::UsersControllerTest < ActionController::TestCase
-
   def setup
     @user = users(:admin)
     sign_in @user
