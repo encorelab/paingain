@@ -30,3 +30,7 @@ $$ |      $$ |  $$ |$$$$$$\ $$ | \$$ |      \$$$$$$  |$$ |  $$ |$$$$$$\ $$ | \$$
 * Create a new site entitled `PainGain`, with the identifier as `paingain`.
 * Upon navigating to Pages you should see the site tree.
 
+# Tests
+* Run `bundle exec rake db:migrate RAILS_ENV=test` to setup test environment
+* `bundle exec rake` to run all tests.
+
