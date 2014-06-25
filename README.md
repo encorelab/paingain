@@ -11,6 +11,10 @@ $$ |      $$ |  $$ |$$$$$$\ $$ | \$$ |      \$$$$$$  |$$ |  $$ |$$$$$$\ $$ | \$$
 
 ```
 
+# About
+PainGain is application aimed at helping nurses and health care professionals asses and improve their pain practice. It is built with the ruby-on-rails application framework, with bootstrap 3, haml, and sass.
+
+
 # the Stack
 
 * Rails 4
