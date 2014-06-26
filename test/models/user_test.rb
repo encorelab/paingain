@@ -1,6 +1,8 @@
 require 'test_helper'
-
 class UserTest < ActiveSupport::TestCase
+  def setup
+    @user = users(:default)
+  end
 
   def test_fixture_validity
     User.all.each do |user|
@@ -9,8 +11,10 @@ class UserTest < ActiveSupport::TestCase
   end
 
   def test_group
-    user = users(:default)
-    assert user.group.present?
+    assert @user.group.present?
+    assert @user.role.present?
+    assert @user.first_name.present?
+    assert @user.last_name.present?
   end
 
   def test_validations
@@ -22,10 +26,9 @@ class UserTest < ActiveSupport::TestCase
   end
 
   def test_auth_conditions
-    user = users(:default)
-    email_conditions = {login: user.email}
-    assert_equal user.id, User.find_first_by_auth_conditions(email_conditions).id
+    # user = users(:default)
+    email_conditions = {login: @user.email}
+    assert_equal @user.id, User.find_first_by_auth_conditions(email_conditions).id
     assert_nil User.find_first_by_auth_conditions(login: 'broken')
   end
-
 end

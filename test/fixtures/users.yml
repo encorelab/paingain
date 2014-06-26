@@ -2,6 +2,8 @@ default:
   email: default@test.com
   group: default
   role: user
+  first_name: default
+  last_name: default
 
 admin:
   email: admin@test.com
