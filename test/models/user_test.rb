@@ -2,6 +2,7 @@ require 'test_helper'
 class UserTest < ActiveSupport::TestCase
   def setup
     @user = users(:default)
+    @admin = users(:admin)
   end
 
   def test_fixture_validity
@@ -15,6 +16,12 @@ class UserTest < ActiveSupport::TestCase
     assert @user.role.present?
     assert @user.first_name.present?
     assert @user.last_name.present?
+  end
+
+  def test_admin
+    assert_equal 'admin', @admin.role
+    assert @admin.group.present?
+    assert @admin.role.present?
   end
 
   def test_validations
