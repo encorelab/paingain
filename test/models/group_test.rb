@@ -16,5 +16,8 @@ class GroupTest < ActiveSupport::TestCase
   def test_user
     group = groups(:default)
     assert group.users.first.present?
+    assert group.users.first.id.present?
+    assert group.users.first.first_name.present?
+    assert group.users.first.last_name.present?
   end
 end
