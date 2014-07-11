@@ -3,7 +3,6 @@ class Admin::UsersController < Comfy::Admin::Cms::BaseController
   before_action :load_user,   :only => [:show, :edit, :update, :destroy]
 
   def index
-    # You probably want some kind of pagination and filtering here eventually
     @users = User.all
   end
 
