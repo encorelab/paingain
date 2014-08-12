@@ -1,14 +1,13 @@
 .page-header
-	%h2 Plan
+	%h2 Choose your team members
 
 .row
-	%button.btn.btn-primary.btn-explain{"data-target" => "#explainModal", "data-toggle" => "modal"} Explain the Plan Cycle
+	%button#grp-explain.btn.btn-primary.btn-explain{"data-target" => "#explainModal", "data-toggle" => "modal"} Explain the Members Page
 
-#plan-link-box
-	%button.btn.btn-primary.btn-lrg.btn-block{type: "button"} Step 1: Reflect on Your Unit’s Readiness for Change
-	%button.btn.btn-lrg.btn-block{type: "button", disabled: "disabled"} Step 2: Create Your Pain Practice Change Team
-	%button.btn.btn-lrg.btn-block{type: "button", disabled: "disabled"} Step 3: Look at Your Unit’s Practices
-	%button.btn.btn-lrg.btn-block{type: "button", disabled: "disabled"} Step 4: Choose your Pain Practice Change (PPC)
+#members-box
+
+
+
 
 
 #explainModal.modal.fade{"aria-hidden" =>"true", "aria-labeldby" => "explainLabel", role: "dialog", tabindex: "-1"}
@@ -18,7 +17,7 @@
 				%button.close{"data-dismiss" => "modal", type: "button"}
 					%span{"aria-hidden" => "true"} ×
 					%span.sr-only Close
-				%h4#explainLabel.modal-title The Planning Cycle
+				%h4#explainLabel.modal-title The Members Page
 			.modal-body
 				%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium varius purus, ut cursus sapien accumsan aliquet. Vivamus scelerisque ipsum magna, sed interdum dui bibendum cursus. In tristique scelerisque nulla eget auctor. Pellentesque id elit purus. Sed luctus laoreet eros id tristique. Quisque pellentesque sed libero dapibus hendrerit. Nullam quis pellentesque odio.
 

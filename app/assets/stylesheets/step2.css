@@ -1,0 +1,12 @@
+#members-box {
+	min-height: 250px;
+	background: #0CA4E8;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#grp-explain{
+	max-width:125px;
+	float:right;
+}

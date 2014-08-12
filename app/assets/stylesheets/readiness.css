@@ -1,0 +1,54 @@
+.description {
+	padding-bottom: 25px;
+}
+
+.btn-submit {
+	float:right;
+}
+
+.change-boxes {
+    width: 200px;
+    height: 200px;
+    background: #1D5AAB;
+    position: relative;
+    text-align: center;
+}
+
+.change-boxes:before {
+    content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-bottom: 58px solid #1D5AAB;
+	border-left: 58px solid #fff;
+	border-right: 58px solid #fff;
+	width: 84px;
+	height: 0;
+	box-sizing: initial;
+}
+
+.change-boxes:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;    
+    border-top: 58px solid #1D5AAB;
+    border-left: 58px solid #fff;
+    border-right: 58px solid #fff;
+    width: 84px;
+    height: 0;
+    box-sizing: initial;
+}  
+
+.change-boxes span{
+	display: inline-block;
+	margin-top: 84px;
+	color: white;
+	font-size: 20px;
+}
+
+.change-links {
+	float: left;
+	margin-left: 70px;
+	padding-bottom: 40px;
+}

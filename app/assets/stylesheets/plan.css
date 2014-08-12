@@ -1,0 +1,18 @@
+.btn-explain {
+	max-width:100px;
+	white-space:normal !important;
+	float: right;
+	margin-bottom: 35px;
+	
+}
+
+#plan-link-box {
+	max-width:500px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#plan-link-box .btn {
+	margin-bottom: 15px;
+	height:50px;
+}
