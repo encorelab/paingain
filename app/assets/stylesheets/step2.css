@@ -1,9 +1,39 @@
 #members-box {
-	min-height: 250px;
+	min-height: 350px;
 	background: #0CA4E8;
-	max-width: 800px;
-	margin-left: auto;
-	margin-right: auto;
+/*	margin-left: auto;
+	margin-right: auto;*/
+	border-radius: 4px;
+}
+
+#members-box > h2 {
+	font-size: 2em;
+	color: white;
+	text-align: center;
+}
+
+#addNewMembers {
+	position: relative;
+	top: 245px;
+	display: block;
+    margin : 0 auto;
+	text-align:center;
+}
+
+#addNewMembers [name="member"] {
+	width: 250px;
+	text-align: center;
+}
+
+#addNewMembers > .btn {
+	margin-left: 20px;
+}
+
+#goToNextStep {
+	margin: 60px -15px 40px 0;
+	float: right;
+	width: 110px;
+	white-space: normal !important;
 }
 
 #grp-explain{
