@@ -1,0 +1,13 @@
+#pain-assessment {
+	display: inline-block;
+	text-decoration: none;
+}
+
+#pain-management {
+	display: inline-block;
+	text-decoration: none;
+}
+
+.span6 {
+	max-width: 460px;
+}
