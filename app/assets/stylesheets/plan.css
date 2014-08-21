@@ -1,3 +1,8 @@
+.page-header {
+	margin-top: 5px;
+}
+
+
 .btn-explain {
 	max-width:100px;
 	white-space:normal !important;
@@ -15,4 +20,17 @@
 #plan-link-box .btn {
 	margin-bottom: 15px;
 	height:50px;
+}
+
+#goToNextStep {
+	margin: 40px -15px 40px 0;
+	float: right;
+	width: 110px;
+	white-space: normal !important;
+}
+
+.step-description {
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 20px;
 }

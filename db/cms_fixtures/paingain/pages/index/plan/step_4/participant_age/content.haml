@@ -1,0 +1,28 @@
+%head
+
+.page-header
+	%p Plan > Step 1 > Step 2 > Step 3 > Step 4 Participant's Age
+
+.step-description
+	%span
+		%strong Select the age range of the patients for your intervention 
+
+.row
+	#rectangle.ppc-choice.col-md-1.col-md-offset-2.col-sm-1.col-sm-offset-2.col-xs-1
+		.ppc-step PAIN ASSESSMENT
+
+	#age-selector.dropdown.col-md-2.col-md-offset-2.col-sm-2.col-sm-offset-2.col-xs-2.col-xs-offset-2
+		%button#dropdownMenu1.btn.btn-default.dropdown-toggle{"data-toggle" => "dropdown", :type => "button"}
+			Patient Age Range
+			%span.caret
+		%ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1", :role => "menu"}
+			%li{:role => "presentation"}
+				%a{:href => "#", :role => "menuitem", :tabindex => "-1"} 0-1 years old
+			%li{:role => "presentation"}
+				%a{:href => "#", :role => "menuitem", :tabindex => "-1"} 1-6 years old
+			%li{:role => "presentation"}
+				%a{:href => "#", :role => "menuitem", :tabindex => "-1"} 6-12 years old
+			%li{:role => "presentation"}
+				%a{:href => "#", :role => "menuitem", :tabindex => "-1"} 12-18 years old
+
+%input#goToNextStep.btn.btn-primary.submit{:type => "submit", :value => "Next Step"}/

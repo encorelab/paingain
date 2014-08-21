@@ -1,13 +1,151 @@
 #pain-assessment {
-	display: inline-block;
 	text-decoration: none;
 }
 
 #pain-management {
-	display: inline-block;
 	text-decoration: none;
 }
 
-.span6 {
-	max-width: 460px;
+#rectangle {
+	width: 50px;
+	height: 400px;
 }
+
+.ppc-choice {
+	background: rgba(151, 155, 170, .84);
+}
+
+.age-choice {
+	background: rgba(109, 120, 170, .84);
+}
+
+#age-selector {
+	margin-top: 15%;
+}
+
+#age-selector .btn {
+	width: 200px;
+}
+
+#age-selector > .dropdown-menu {
+	left: inherit;
+	width: 200px;
+}
+
+.ppc-step {
+	color: white;
+	width: 400px;
+	transform-origin: 200px 200px;
+	text-align: center;
+	/* Safari */
+	-webkit-transform: rotate(-90deg);
+
+	/* Firefox */
+	-moz-transform: rotate(-90deg);
+
+	/* IE */
+	-ms-transform: rotate(-90deg);
+
+	/* Opera */
+	-o-transform: rotate(-90deg);
+
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+#tool-square {
+	height: 250px;
+	width: 250px;
+	background: rgb(29, 90, 171);
+	margin-top: 5%;
+	border-radius: 4px;
+}
+
+#ppc-tool-list {
+	margin: 5% 0%;
+	background: white;
+	height:90%;
+	/*border-radius: 4px;*/
+}
+
+#ppc-tool-list > ul {
+	padding: 0px 0;
+	margin: 2px 0 0;
+	font-size: 14px;
+	list-style: none;
+	overflow-y: scroll;
+	height: 225px;
+}
+
+#ppc-tool-list > ul > li{
+	border: 1px solid gray;
+	text-align: right;
+	padding: 3px 9px;
+}
+
+
+#ppc-tool-list > ul > li >input[type=checkbox]{
+	float: left;
+}
+
+#description-square {
+	height: 400px;
+	width: 300px;
+	background: rgb(29, 90, 171);
+	border-radius: 4px;
+}
+
+#description-square > span {
+	display: block;
+	text-align: center;
+	margin: 0px auto;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 15px 0px;
+}
+
+#description-text {
+	margin: 0% 5% 5%;
+	background: white;
+	height: 82%;
+	overflow: scroll;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+#pointer-triangle {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 150px 0 150px 100px;
+	border-color: transparent transparent transparent #007bff;
+	border-radius: 15px;
+}
+
+
+.triangle,
+.triangle:before,
+.triangle:after {
+    width:  7em;
+    height: 7em;
+    position: relative;
+    background: orange;
+    border-top-right-radius: 30%;
+}
+.triangle:before,
+.triangle:after {
+    content: '';
+    position: absolute;
+}
+
+.triangle {
+    transform: rotate(-90deg) skewX(-30deg) scale(1,.866);
+}
+.triangle:before {
+    transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
+}
+.triangle:after {
+    transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
+}
+
