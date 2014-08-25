@@ -6,9 +6,10 @@
 	text-decoration: none;
 }
 
-#rectangle {
+.rectangle {
 	width: 50px;
 	height: 400px;
+
 }
 
 .ppc-choice {
@@ -17,6 +18,10 @@
 
 .age-choice {
 	background: rgba(109, 120, 170, .84);
+}
+
+.tool-choice {
+	background: rgba(94, 131, 170, .84);
 }
 
 #age-selector {
@@ -51,6 +56,11 @@
 
 	/* Internet Explorer */
 	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	text-decoration: none;
+}
+
+.ppc-step :hover, :focus {
+	text-decoration: none;
 }
 
 #tool-square {
@@ -114,7 +124,23 @@
 	padding: 5px;
 }
 
-#pointer-triangle {
+#aim-statement {
+	margin-top: 8%;
+	min-height: 200px;
+	height: auto;
+	vertical-align: middle;
+	border:	solid 1px gray;
+	border-radius: 8px;
+}
+
+#aim-statement > p{
+	position: relative;
+/*  	top: 50%;*/
+  	margin: 10% 4px;
+}
+
+
+/*#pointer-triangle {
 	width: 0;
 	height: 0;
 	border-style: solid;
@@ -147,5 +173,5 @@
 }
 .triangle:after {
     transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
-}
+}*/
 

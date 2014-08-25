@@ -1,13 +1,27 @@
 .page-header
-	%h2 Change
-	%p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium vero molestiae accusamus nemo eos voluptate ipsa numquam nihil cum odio voluptatem necessitatibus voluptates, sapiente expedita dolorem est laboriosam rem atque?
+	%h2 Plan
+
 .row
-	.col-md-6
-		%h3 Badges
-	.col-md-6
-		%h3 Resources
-.row
-	.col-md-6
-		%h3 New Cylce
-	.col-md-6
-		%h3 Past Cycles
+	%button.btn.btn-primary.btn-explain{"data-target" => "#explainModal", "data-toggle" => "modal"} Explain the Plan Cycle
+
+#plan-link-box
+	%button#step-5-btn.btn.btn-lrg.btn-block{type: "button"} Step 5: Plan and Carry Out Pain Practice Change
+	%button#step-6-btn.btn.btn-lrg.btn-block{type: "button"} Step 6: Evaluate Your Unit’s Pain Practice Change
+	%button#step-7-btn.btn.btn-lrg.btn-block{type: "button"} Step 7: Plan Your Unit’s Next Steps
+	
+
+
+#explainModal.modal.fade{"aria-hidden" =>"true", "aria-labeldby" => "explainLabel", role: "dialog", tabindex: "-1"}
+	.modal-dialog
+		.modal-content
+			.modal-header
+				%button.close{"data-dismiss" => "modal", type: "button"}
+					%span{"aria-hidden" => "true"} ×
+					%span.sr-only Close
+				%h4#explainLabel.modal-title The Change Cycle
+			.modal-body
+				%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium varius purus, ut cursus sapien accumsan aliquet. Vivamus scelerisque ipsum magna, sed interdum dui bibendum cursus. In tristique scelerisque nulla eget auctor. Pellentesque id elit purus. Sed luctus laoreet eros id tristique. Quisque pellentesque sed libero dapibus hendrerit. Nullam quis pellentesque odio.
+
+				%p Sed aliquam leo tortor. Nulla iaculis ante id elementum porttitor. Curabitur ac bibendum leo, sit amet dignissim velit. Mauris suscipit condimentum lectus, non volutpat nisl bibendum vitae. Quisque suscipit neque non dui malesuada, quis dignissim leo egestas. Maecenas volutpat mi ut libero facilisis molestie. Quisque ut nibh et diam dictum porttitor. Integer fermentum metus ac lacus laoreet aliquet. Integer mollis orci quis nibh consectetur, eget interdum lectus posuere.
+			.modal-footer
+				%button.btn.btn-default{type: "button", "data-dismiss" => "modal"} Close
